@@ -1,0 +1,229 @@
+.page1_container {
+    display: grid;
+    background-image: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%), url(/assets/images/stephen-leonardi-Al9Cl-b7EFU-unsplash1.png);
+    background-size: cover;
+    grid-template-rows: 1fr 2fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 150px;
+    align-items: center;
+}
+
+.logo {
+    width: 110px;
+    height: 24px;
+    margin-left: 100px;
+    grid-column: 1/2;
+}
+
+.nav {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.nav_items {
+    font-family: 'Roboto', Times, serif;
+    color: white;
+    width: 69px;
+    height: 39px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav_items:hover {
+    color: rgb(199, 199, 50);
+}
+
+main {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    margin-left: 100px;
+}
+
+.page1_header {
+    color: white;
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.page1_text {
+    width: 60vw;
+}
+
+.page1_descripttion {
+    color: white;
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 40px;
+}
+
+.page1_cells {
+    display: grid;
+    background-color: white;
+    width: 85vw;
+    height: 174px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: self-end;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.cell1,
+.cell2,
+.cell3,
+.cell4,
+.cell5,
+.cell6 {
+    background-color: #FFF0CB;
+    height: 61px;
+}
+
+.cell1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-left: 50px;
+}
+
+.cell2 {
+    grid-row: 1/2;
+    grid-column: 2/6;
+    margin-right: 50px;
+}
+
+.cell3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 50px;
+}
+
+.cell4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.cell5 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.cell6 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+#button_page1 {
+    grid-row: 2/3;
+    grid-column: 5/6;
+    background-color: #FFC839;
+    height: 61px;
+    border: none;
+    margin-right: 50px;
+    color: black;
+}
+
+#button_page1:hover {
+    background-color: #d19b14;
+}
+
+/*страница 2*/
+.page2_container {
+    background-color: white;
+    display: grid;
+    margin: 40px;
+    grid-template-rows: 1fr 200px;
+    grid-template-columns: repeat(auto-fit, 100px);
+}
+
+.page2_container>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page2_text {
+    text-decoration: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.page2_below_image1,
+.page2_below_image2,
+.page2_below_image3 {
+    background-color: white;
+    box-shadow: 0px 4px 59px -14px rgba(171, 124, 0, 0.29);
+    width: 200px;
+    height: 100px;
+    grid-row: 2/3;
+}
+
+.icon_page2 {
+    width: 5px;
+}
+
+.page2_text :hover {
+    background-color: #FFC839;
+}
+
+/*для телефонов*/
+@media screen and (max-width: 767px) {
+    .page1_container {
+        display: grid;
+        background-image: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%), url(/assets/images/stephen-leonardi-Al9Cl-b7EFU-unsplash1.png);
+        background-size: cover;
+        grid-template-rows: 1fr 2fr 1fr 2fr;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        height: 20vh;
+        align-items: center;
+    }
+
+    .logo {
+        width: 10vh;
+        align-items: center;
+    }
+
+    .nav {
+        font-family: 'Roboto', Times, serif;
+        color: white;
+        width: 1fr;
+        height: 20vh;
+        text-decoration: none;
+    }
+
+    .nav_items {
+        font-family: 'Roboto', Times, serif;
+        color: white;
+        width: 1fr;
+        height: 20vh;
+        text-decoration: none;
+    }
+
+    .nav_items:hover {
+        color: rgb(199, 199, 50);
+    }
+
+}
