@@ -1,229 +1,160 @@
 .page1_container {
-    display: grid;
     background-image: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%), url(/assets/images/stephen-leonardi-Al9Cl-b7EFU-unsplash1.png);
     background-size: cover;
-    grid-template-rows: 1fr 2fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 1fr 2fr;
     width: 100vw;
     height: 100vh;
 }
 
-.header {
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    height: 150px;
-    align-items: center;
-}
-
-.logo {
-    width: 110px;
-    height: 24px;
-    margin-left: 100px;
-    grid-column: 1/2;
-}
-
-.nav {
-    grid-column: 2/3;
-    justify-self: center;
-}
-
-.nav_items {
+.page1_nav_points {
+    text-decoration: none;
     font-family: 'Roboto', Times, serif;
     color: white;
-    width: 69px;
-    height: 39px;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 15px;
 }
 
-.nav_items:hover {
+.page1_nav_points:hover {
     color: rgb(199, 199, 50);
 }
 
-main {
-    grid-row: 2/3;
+.page1_main {
     display: grid;
-    grid-template-rows: 2fr 1fr 2fr;
-    margin-left: 100px;
-}
-
-.page1_header {
-    color: white;
-    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-}
-
-.page1_text {
+    margin: 50px;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 60vw;
 }
 
-.page1_descripttion {
+.h1 {
+    color: white;
+    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 60px;
+    grid-row: 1/2;
+}
+
+.page1_text {
+    grid-row: 2/3;
     color: white;
     font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 29px;
-    line-height: 40px;
 }
 
-.page1_cells {
-    display: grid;
-    background-color: white;
-    width: 85vw;
-    height: 174px;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: self-end;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
+/*страница 1 - Desktop*/
 
-.cell1,
-.cell2,
-.cell3,
-.cell4,
-.cell5,
-.cell6 {
-    background-color: #FFF0CB;
-    height: 61px;
-}
+@media screen and (min-width: 1024px) {
 
-.cell1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    margin-left: 50px;
-}
-
-.cell2 {
-    grid-row: 1/2;
-    grid-column: 2/6;
-    margin-right: 50px;
-}
-
-.cell3 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    margin-left: 50px;
-}
-
-.cell4 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-
-.cell5 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-}
-
-.cell6 {
-    grid-row: 2/3;
-    grid-column: 4/5;
-}
-
-#button_page1 {
-    grid-row: 2/3;
-    grid-column: 5/6;
-    background-color: #FFC839;
-    height: 61px;
-    border: none;
-    margin-right: 50px;
-    color: black;
-}
-
-#button_page1:hover {
-    background-color: #d19b14;
-}
-
-/*страница 2*/
-.page2_container {
-    background-color: white;
-    display: grid;
-    margin: 40px;
-    grid-template-rows: 1fr 200px;
-    grid-template-columns: repeat(auto-fit, 100px);
-}
-
-.page2_container>div>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.page2_text {
-    text-decoration: none;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    color: #000000;
-}
-
-.page2_below_image1,
-.page2_below_image2,
-.page2_below_image3 {
-    background-color: white;
-    box-shadow: 0px 4px 59px -14px rgba(171, 124, 0, 0.29);
-    width: 200px;
-    height: 100px;
-    grid-row: 2/3;
-}
-
-.icon_page2 {
-    width: 5px;
-}
-
-.page2_text :hover {
-    background-color: #FFC839;
-}
-
-/*для телефонов*/
-@media screen and (max-width: 767px) {
-    .page1_container {
+    .page1_search_panel {
+        grid-row: 3/4;
+        background-color: white;
+        width: 85vw;
         display: grid;
-        background-image: linear-gradient(0.87deg, rgba(2, 55, 135, 0.9) 0.69%, rgba(81, 38, 174, 0.4736) 100.48%, rgba(38, 92, 174, 0.0102906) 100.49%, rgba(195, 195, 196, 0.00520833) 100.5%, #76A6EF 100.51%), url(/assets/images/stephen-leonardi-Al9Cl-b7EFU-unsplash1.png);
-        background-size: cover;
-        grid-template-rows: 1fr 2fr 1fr 2fr;
-        grid-template-columns: 1fr;
-        width: 100vw;
-        height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 7px;
+        padding: 7px;
     }
 
     .header {
-        height: 20vh;
-        align-items: center;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        width: 100vw;
+        margin: 50px;
     }
 
-    .logo {
-        width: 10vh;
-        align-items: center;
+    .page1_logo {
+        grid-column: 1/2;
     }
 
-    .nav {
-        font-family: 'Roboto', Times, serif;
-        color: white;
-        width: 1fr;
-        height: 20vh;
-        text-decoration: none;
+    .page1_nav {
+        grid-column: 2/3;
+        justify-self: center;
     }
 
-    .nav_items {
-        font-family: 'Roboto', Times, serif;
-        color: white;
-        width: 1fr;
-        height: 20vh;
-        text-decoration: none;
+
+    .cell {
+        background-color: #FFF0CB;
+        border: none;
     }
 
-    .nav_items:hover {
-        color: rgb(199, 199, 50);
+    .cell1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
     }
 
+    .cell2 {
+        grid-row: 1/2;
+        grid-column: 2/6;
+    }
+
+    .cell3 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .cell4 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .cell5 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    .cell6 {
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    #button_page1 {
+        grid-row: 2/3;
+        grid-column: 5/6;
+        background-color: #FFC839;
+        border: none;
+        color: black;
+    }
+
+    #button_page1:hover {
+        background-color: #d19b14;
+    }
 }
+
+/*страница 1_планшеты*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media acreen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {}
+
+/*страница 1_телефоны*/
+@media screen and (max-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .page1_logo {
+        grid-row: 1/2;
+        width: 60vw;
+        justify-self: center;
+        padding-bottom: 20px;
+    }
+
+    .page1_nav_points {
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Roboto', Times, serif;
+        color: white;
+        padding: 5px;
+        font-size: 10vw;
+        justify-self: center;
+    }
+
+
+
+    /*страница 2*/
